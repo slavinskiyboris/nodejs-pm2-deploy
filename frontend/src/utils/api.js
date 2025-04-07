@@ -1,4 +1,3 @@
-
 const getResponse = (res) => {
     return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`);
 }
@@ -139,7 +138,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('http://localhost:3000');
+  const api = new Api('https://api.slavinskiy.nomorepartiessbs.ru');
   
   export default api;
   
